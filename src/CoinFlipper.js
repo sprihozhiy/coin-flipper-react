@@ -23,7 +23,6 @@ class CoinFlipper extends Component {
     const randSide = this.props.coins[
       Math.floor(Math.random() * this.props.coins.length)
     ];
-    console.log(randSide);
     this.setState(currentState => {
       return {
         coinSide: randSide,
@@ -38,7 +37,7 @@ class CoinFlipper extends Component {
     });
   };
 
-  handleClick = e => {
+  handleClick = () => {
     this.flipTheCoin();
   };
 
